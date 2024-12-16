@@ -13,7 +13,7 @@
         }
     ],
     "bin": [
-         "./brain-games.php"
+         "bin/brain-games.php"
     ],
     "require": {}
 }
