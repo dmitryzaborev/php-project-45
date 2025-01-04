@@ -1,6 +1,7 @@
 {
     "name": "hexlet/code",
     "description": "'My new project'",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
@@ -13,7 +14,7 @@
         }
     ],
     "bin": [
-         "bin/brain-games.php"
+        "bin/brain-games"
     ],
     "require": {
         "wp-cli/php-cli-tools": "^0.12.1"
