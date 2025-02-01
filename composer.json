@@ -2,11 +2,17 @@
     "name": "hexlet/code",
     "description": "'My new project'",
     "license": "MIT",
+    "bin": [
+         "bin/brain-games"
+         ],
     "autoload": {
+        "files": [
+            "src/Cli.php",
+          ],
         "psr-4": {
-            "Hexlet\\Code\\": "src/"
+            "BrainGames\\Cli\\": "src/"
         }
-    },
+   },
     "authors": [
         {
             "name": "Dmitry Zaborev",

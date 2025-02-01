@@ -1,4 +1,9 @@
 #!/usr/bin/env php
-<?php
-   echo  "Welcome to the Brain Games!";
-?>
+
+  <?php
+
+  require_once __DIR__ . '/../src/Autoload.php';
+
+  use function App\Cli\sayHello;
+
+  sayHello();
