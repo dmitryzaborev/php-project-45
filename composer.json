@@ -1,6 +1,13 @@
 {
     "name": "hexlet/code",
     "description": "'My new project'",
+    "authors": [
+        {
+            "name": "Dmitry Zaborev",
+            "email": "egorov.vladimor@gmail.com"
+        }
+      ],
+
     "license": "MIT",
     "bin": [
          "bin/brain-games"
@@ -9,20 +16,11 @@
         "files": [
             "src/Cli.php",
           ],
-        "psr-4": {
-            "BrainGames\\Cli\\": "src/"
-        }
    },
-    "authors": [
-        {
-            "name": "Dmitry Zaborev",
-            "email": "egorov.vladimor@gmail.com"
-        }
-    ],
-    "bin": [
-        "bin/brain-games"
-    ],
     "require": {
         "wp-cli/php-cli-tools": "^0.12.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6"
     }
 }
