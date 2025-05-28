@@ -7,3 +7,5 @@
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=dmitryzaborev_php-project-45&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=dmitryzaborev_php-project-45)
 ##Demonstration
 [Look recording](https://asciinema.org/connect/b20477a6-2540-4b23-ba15-3c21a36e42e0)
+##Calc
+[Look Calc](https://asciinema.org/connect/b20477a6-2540-4b23-ba15-3c21a36e42e0)
