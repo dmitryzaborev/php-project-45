@@ -13,3 +13,5 @@
 [Look Gmd](https://asciinema.org/connect/b20477a6-2540-4b23-ba15-3c21a36e42e0)
 ##Progression
 [Look Progression](https://asciinema.org/connect/b20477a6-2540-4b23-ba15-3c21a36e42e0)
+##Prime
+[Look Prime](https://asciinema.org/connect/b20477a6-2540-4b23-ba15-3c21a36e42e0)
