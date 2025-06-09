@@ -11,7 +11,7 @@ function playRound(string $question, string $rightAnswer)
 {
     line($question);
     $answer = prompt("Your answer");
-    if ($rightAnswer == $answer) {
+    if ($rightAnswer === $answer) {
         line('Correct!');
         return true;
     } else {

@@ -12,11 +12,11 @@ const RULE_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".
 
 function isPrime(int $num)
 {
-    if (($num == 1) || ($num == 0)) {
+    if (($num === 1) || ($num === 0)) {
         return 'no';
     }
     for ($i = 2; $i < $num; $i++) {
-        if ($num % $i == 0) {
+        if ($num % $i === 0) {
             return 'no';
         }
     }

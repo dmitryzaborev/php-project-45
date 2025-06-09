@@ -27,7 +27,7 @@ function playGame()
 
         $temp = $numFirst;
         for ($curPos = 1; $curPos <= $lengthProgression; $curPos++) {
-            $temp .= ($curPos == $hiddenPos) ? (" " . "..") : (" " . ($numFirst + ($step * $curPos)));
+            $temp .= ($curPos === $hiddenPos) ? (" " . "..") : (" " . ($numFirst + ($step * $curPos)));
         }
         $questionsAndAnswers[$round]['question'] = "Question: " . $temp;
         $questionsAndAnswers[$round]['answer'] = findHidInProgres($numFirst, $step, $lengthProgression, $hiddenPos);
