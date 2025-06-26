@@ -10,13 +10,13 @@ use const Brain\Games\Engine\NUMBER_ROUNDS;
 
 const RULE_GAME = 'What number is missing in the progression?';
 
-function findHidInProgres(int $firstNum, int $step, int $length, int $hiddenPos)
+function findHidInProgres(int $firstNum, int $step, int $length, int $hiddenPos):int
 {
     return ($firstNum + ($step * $hiddenPos));
 }
 
 //game
-function playGame()
+function playGame():void
 {
     $questionsAndAnswers = [];
     for ($round = 1; ($round <= NUMBER_ROUNDS); $round++) {

@@ -10,7 +10,7 @@ use const Brain\Games\Engine\NUMBER_ROUNDS;
 
 const RULE_GAME = 'Find the greatest common divisor of given numbers.';
 
-function findGcd(int $num1, int $num2)
+function findGcd(int $num1, int $num2):int
 {
     if ($num1 === 0) {
         return ($num2 === 0) ? 1 : $num2;
@@ -28,7 +28,7 @@ function findGcd(int $num1, int $num2)
 }
 
 //game
-function playGame()
+function playGame():void
 {
     $questionsAndAnswers = [];
     for ($round = 1; ($round <= NUMBER_ROUNDS); $round++) {

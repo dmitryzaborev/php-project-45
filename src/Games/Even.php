@@ -10,12 +10,12 @@ use const Brain\Games\Engine\NUMBER_ROUNDS;
 
 const RULE_GAME = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-function isEven(int $number)
+function isEven(int $number):bool
 {
     return ($number % 2 === 0);
 }
 
-function playGame()
+function playGame():void
 {
     $questionsAndAnswers = [];
     for ($round = 1; ($round <= NUMBER_ROUNDS); $round++) {

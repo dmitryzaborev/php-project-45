@@ -10,7 +10,7 @@ use const Brain\Games\Engine\NUMBER_ROUNDS;
 
 const RULE_GAME = 'What is the result of the expression?';
 
-function calculate(int $number1, string $operation, int $number2)
+function calculate(int $number1, string $operation, int $number2):int
 {
     switch ($operation) {
         case "+":
@@ -22,7 +22,7 @@ function calculate(int $number1, string $operation, int $number2)
     }
 }
 
-function playGame()
+function playGame():void
 {
     $questionsAndAnswers = [];
     for ($round = 1; $round <= NUMBER_ROUNDS; $round++) {

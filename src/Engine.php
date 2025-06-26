@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const NUMBER_ROUNDS = 3;
 
-function playRound(string $question, string $rightAnswer)
+function playRound(string $question, string $rightAnswer):bool
 {
     line($question);
     $answer = prompt("Your answer");
@@ -20,7 +20,7 @@ function playRound(string $question, string $rightAnswer)
     }
 }
 
-function playingGame(string $rule, array $questionsAndAnswers)
+function playingGame(string $rule, array $questionsAndAnswers):void
 {
     //Start of the game, greeting
     line("Welcome to the Brain Games!");

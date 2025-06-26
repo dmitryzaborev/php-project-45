@@ -10,7 +10,7 @@ use const Brain\Games\Engine\NUMBER_ROUNDS;
 
 const RULE_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function isPrime(int $num)
+function isPrime(int $num):string
 {
     if (($num === 1) || ($num === 0)) {
         return 'no';
@@ -24,7 +24,7 @@ function isPrime(int $num)
 }
 
 //game
-function playGame()
+function playGame():void
 {
     $questionsAndAnswers = [];
     for ($round = 1; ($round <= NUMBER_ROUNDS); $round++) {
