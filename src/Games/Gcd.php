@@ -1,42 +1,34 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Brain\Games\Gcd;
 
-use function cli\line;
-use function cli\prompt;
 use function Brain\Games\Engine\playingGame;
 
 use const Brain\Games\Engine\NUMBER_ROUNDS;
 
 const RULE_GAME = 'Find the greatest common divisor of given numbers.';
 
-function findGcd(int $num1, int $num2):int
+function findGcd(int $a, int $b): int
 {
-    if ($num1 === 0) {
-        return ($num2 === 0) ? 1 : $num2;
+    while ($b !== 0) {
+        [$a, $b] = [$b, $a % $b];
     }
-    while ($num2 > 0) {
-        if ($num1 === $num2) {
-            return $num1;
-        } elseif ($num1 > $num2) {
-            $num1 = $num1 - $num2;
-        } else {
-            $num2 = $num2 - $num1;
-        }
-    }
-    return $num1;
+    return abs($a);
 }
 
-//game
-function playGame():void
+function playGame(): void
 {
     $questionsAndAnswers = [];
-    for ($round = 1; ($round <= NUMBER_ROUNDS); $round++) {
+
+    for ($round = 1; $round <= NUMBER_ROUNDS; $round++) {
         $number1 = rand(0, 100);
         $number2 = rand(0, 100);
 
         $questionsAndAnswers[$round]['question'] = "Question: {$number1} {$number2}";
-        $questionsAndAnswers[$round]['answer'] = findGcd($number1, $number2);
+        $questionsAndAnswers[$round]['answer'] = (string) findGcd($number1, $number2);
     }
+
     playingGame(RULE_GAME, $questionsAndAnswers);
 }
